@@ -1040,8 +1040,32 @@ span.input_msg {
     height: 100%;
     width: 100%;
 }
+.meets_cards_img_outer:hover  .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .meets_cards_img {
     height: 100%;
     width: 100%;
+    border-radius: 1.875rem;
+}
+.meets_bottom_row {
+    padding: 15px;
+}
+.upcoming_meets_wrap {
+    background-color: #3D2415;
+    padding: 1.25rem;
+    border-radius: 1.875rem;
+}
+.upcoming_meets {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.upcoming_meets p {
+    color: #ebbe00;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 /* Meets Page CSS End*/
