@@ -720,7 +720,9 @@ span.theme {
     position: relative;
 
 }
-
+.blog_card_img-outer .common_overlay {
+background-color: rgb(61 36 21/50%);
+}
 .blog_card_img-outer:hover .common_overlay {
     transform: translate(-50%, -50%) scale(1);
 }
@@ -775,8 +777,8 @@ span.theme {
 }
 
 .blogs_cards_butn {
-    color: #fff;
-    border-color: #fff;
+    color: #ebbe00;
+    border-color: #ebbe00;
 }
 
 /* Home Blog Cards CSS End*/
