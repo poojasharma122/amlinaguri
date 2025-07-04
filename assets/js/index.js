@@ -24,48 +24,23 @@ AOS.init({
 });
 // AOS JS End
 
-// Slick Slider JS Start
-$('.home_featured_slider').slick({
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 1000,
-  dots: true,
-  arrow: true,
-  responsive: [
-    {
-      breakpoint: 1199,
-      settings: {
-        centerPadding: '0',
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        centerPadding: '0',
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-
-        centerPadding: '0',
-        slidesToShow: 1,
-      }
-    },
-     {
-      breakpoint: 575,
-      settings: {
-        dots:false,
-        slidesToShow: 1,
-      }
-    }
-  ]
+// Swiper JS Start
+var swiper = new Swiper(".swiper-container", {
+  loop: true,
+  freeMode: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 3000,
+  slidesPerView: 7,
+  grabCursor: true,
+  loopAdditionalSlides: 2,
 });
-// Slick Slider JS End
+// Swiper JS End
+
+
+
 
 // FAQ JS Start
 let question = document.querySelectorAll(".question");

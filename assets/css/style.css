@@ -165,7 +165,6 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .bg_center_contain {
     background-position: center;
     background-repeat: no-repeat;
@@ -753,24 +752,171 @@ span.theme {
     transform: translate(-50%, -50%);
     pointer-events: auto;
 }
+
 .blog_card_content {
     padding: 1rem;
 }
+
 .blog_card_content h5 {
     color: #ebbe00;
     font-size: 1.2rem;
     line-height: 1.4;
     text-align: center;
 }
+
 .home_blog_btn {
     color: #3D2415;
     border-color: #3D2415;
 }
-.home_blog_btn:hover ,.blogs_cards_butn:hover{
+
+.home_blog_btn:hover,
+.blogs_cards_butn:hover {
     border-color: #ebbe00;
 }
+
 .blogs_cards_butn {
-    color:#fff;
+    color: #fff;
     border-color: #fff;
 }
+
 /* Home Blog Cards CSS End*/
+
+/* Home Footer Slider CSS Start */
+.swiper-container {
+    height: 230px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-container-free-mode>.swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.swiper-slide {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-slide .common_overlay{
+    background-color: rgb(61 36 21/40%);
+  }
+  .swiper-slide:hover .common_overlay{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .swiper_slide_img{
+    height: 100%;
+    width: 100%;
+  }
+/* Home Footer Slider CSS  End */
+
+/* Footer CSS Start */
+.site_footer {
+    box-shadow: #ebbe00 0px 5px 10px 5px;
+    background-image: url(../images/footer_bg.jpg);
+    background-color: rgba(0 0 0/80%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.footer_logo a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 6rem;
+    width: 14rem;
+    background-image: url(../images/logo_footer.png);
+}
+.footr_blcks h3 {
+    color: #ebbe00;
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.25rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.disclaimer p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.links_footr ul li a {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    transition: 0.3s all ease-in-out;
+}
+
+.links_footr ul li a:hover {
+    color: #ebbe00;
+    transform: translateX(3px);
+}
+
+.footer_email {
+    color: #fff;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 0.9375rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    margin-right: 5px;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebbe00;
+    border-radius: 5px;
+    transition: 0.2s all ease-in-out;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+}
+.social-links a svg {
+    fill: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom_strip {
+    border-top: 1px solid #ebbe00;
+}
+
+.copy_txt p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.ssl_certi {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0.625rem 0;
+}
+
+.ssl_certi_inner {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3.75rem;
+    width: 12.5rem;
+    background-image: url(../images/ssl.png);
+}
+/* Footer CSS End*/
+ 
