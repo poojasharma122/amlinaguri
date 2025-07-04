@@ -9,7 +9,20 @@
     }
 
 }
-
+@media (max-width: 1024px) {
+    .banner_img, .banner_content{
+        width: 100%;
+    }
+    .banner_img {
+        height: 30rem;
+    }
+    .banner {
+        height: auto;
+    }
+    .banner_content {
+        padding: 3.125rem 1.875rem;
+    }
+}
 
 @media (max-width: 991px) {
     .navigation-menu {
