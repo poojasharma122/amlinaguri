@@ -466,7 +466,7 @@ span.theme {
 
 /* Banner CSS Start */
 .banner {
-    height: 550px;
+    height: 34.375rem;
     background-color: rgba(0 0 0/40%);
     background-blend-mode: multiply;
 }
@@ -783,6 +783,57 @@ background-color: rgb(61 36 21/50%);
 
 /* Home Blog Cards CSS End*/
 
+
+/* Newsletter CSS Start */
+
+.newsletter_input_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #3D2415;
+    max-width: 37.5rem;
+    margin: 3.125rem auto 1.25rem auto;
+}
+
+span.input_msg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    margin-right: 10px;
+    display: inline-block;
+    min-width: 1.5625rem;
+}
+
+.newsletter_input_box input {
+    max-width: 40.625rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0.625rem;
+    color: #3D2415;
+    font-size: 1.5rem;
+}
+
+.newsletter_input_box input::placeholder {
+    color: #55473f;
+}
+
+.newslettr_wrap h4 {
+    color: #3D2415;
+    font-size: 1.3rem;
+}
+.newsletter-btn {
+    color: #3D2415;
+    border-color: #3D2415;
+}
+.newsletter-btn:hover {
+    border-color: #ebbe00;
+}
+/* Newsletter CSS Start */
+
 /* Home Footer Slider CSS Start */
 .swiper-container {
     height: 230px;
@@ -922,3 +973,36 @@ background-color: rgb(61 36 21/50%);
 }
 /* Footer CSS End*/
  
+
+/* Meets Page CSS Start */
+.sub_pages_banner {
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(0 0 0/60%);
+    background-blend-mode: multiply;
+}
+.banner_box {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+.banner_box h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    max-width: 42.375rem;
+    color: #ebbe00;
+}
+/* Meets Page CSS End*/
