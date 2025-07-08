@@ -94,14 +94,13 @@
         grid-template-columns: repeat(2,1fr);
     }
     .meets_cards_content {
-        padding: 0;
+        padding: 1rem 0 0 0;
     }
     .meets_bottom_row {
         padding: 5px;
     }
     .race_cards_img_outer ,.meets_cards_img_outer{
         height: 21.333rem;
-        margin-bottom: 25px;
     }
     .py-7 {
         padding: 3.375rem 0;
@@ -115,6 +114,9 @@
     .meets_cards_content h2 {
         font-size: 1.4rem;
         line-height: 1.4;
+    }
+    .race_cards_content {
+        padding: 1.5rem 0;
     }
 }
 
@@ -147,6 +149,9 @@
     }
     .blog_card_img-outer {
         height: 23rem;
+    }
+    .py-8 {
+        padding: 3rem 0;
     }
 
 }
@@ -233,5 +238,22 @@
     .blog_card_img-outer {
         height: 18rem;
     }
-
+    .race_facilities_wrap {
+        grid-template-columns: 1fr;
+    }
+    .p-4 {
+        padding: 1rem!important;
+    }
+    .race_cards_img_outer, .meets_cards_img_outer {
+        height: 15.333rem;
+    }
+    .destination-card-text {
+        padding: 1rem;
+    }
+    .destination-card-text h3 {
+        font-size: 1.1rem;
+    }
+    .py-8 {
+        padding: 2rem 0;
+    }
 }
