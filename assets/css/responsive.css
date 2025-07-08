@@ -137,6 +137,10 @@
         font-size: 1.1rem;
         font-weight: 400;
     }
+    .get-started-image {
+        height: 20rem;
+        margin-bottom: 1.875rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -224,7 +228,12 @@
     .question::after {
         font-size: 2rem;
     }
-
+    .footr_blcks h3 {
+        font-size: 1.4rem;
+    }
+    .contact_content_wrap h3 {
+        line-height: 1.4;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -287,4 +296,8 @@
     .answer p {
         font-size: 1rem;
     }
+    .get-started-form p {
+        font-size: 1rem;
+    }
+
 }
