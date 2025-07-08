@@ -1281,9 +1281,9 @@ gap: 1.25rem;
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color:#ebbe00;
+    background-color: #231C07;
     overflow: hidden;
-    color: #231C07;
+    color: #ebbe00;
 }
 
 .question::after {
