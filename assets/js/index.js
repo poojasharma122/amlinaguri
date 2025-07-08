@@ -28,15 +28,43 @@ AOS.init({
 var swiper = new Swiper(".swiper-container", {
   loop: true,
   freeMode: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
   speed: 3000,
-  slidesPerView: 7,
   grabCursor: true,
   loopAdditionalSlides: 2,
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,   // 👈 allow autoplay to continue after interaction
+    pauseOnMouseEnter: true,       // 👈 pause only on hover
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    575: {
+      slidesPerView: 3,
+    },
+    767: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 6,
+    },
+    1400: {
+      slidesPerView: 7,
+    },
+  },
 });
+
+
+
 // Swiper JS End
 
 
