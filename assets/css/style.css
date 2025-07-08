@@ -866,6 +866,7 @@ span.input_msg {
   .swiper_slide_img{
     height: 100%;
     width: 100%;
+    overflow: hidden;
   }
 /* Home Footer Slider CSS  End */
 
