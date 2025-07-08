@@ -1,0 +1,420 @@
+@media screen and (max-width:1199px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    .banner.sub_banner .banner_content h1 {
+        padding-left: 1.5rem;
+    }
+
+}
+@media (max-width: 1024px) {
+    .banner_img, .banner_content{
+        width: 100%;
+    }
+    .banner_img {
+        height: 30rem;
+    }
+    .banner {
+        height: auto;
+    }
+    .banner_content {
+        padding: 3.125rem 1.875rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .navigation-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        background-color: #432818;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+        z-index: 100;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .menuToggle .navigation-menu {
+        transform: translateX(0);
+        justify-content: flex-start;
+    }
+
+    .navigation-menu ul {
+        flex-direction: column;
+
+    }
+
+    .menu-toggle-btn {
+        display: block;
+    }
+
+    .menu-close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        text-align: end;
+        z-index: 55;
+        font-size: 21px;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .footer-links {
+        padding-left: 0;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .footer-logo {
+        grid-column: 1 / -1;
+    }
+
+    .footer-links,
+    .footer-contact {
+        grid-column: auto;
+        padding-left: 0;
+    }
+
+    .sticky-header.fixed_header .navigation-menu ul li a {
+        color: #fff;
+    }
+
+    .sticky-header.fixed_header .navigation-menu ul li a::after {
+        background-color: #fff;
+    }
+
+    .racecourse_img_outer {
+        height: 25rem;
+    }
+
+    .racecourse_cards_content {
+        padding: 2rem;
+    }
+
+
+    .img_part {
+        height: 20rem;
+    }
+
+    .text_part {
+        padding: 3rem 0.5rem;
+    }
+    .faqs-image {
+        height: 20rem;
+    }
+    .get-started-image {
+        height: 20rem;
+        margin-bottom: 3rem;
+    }
+    .faq_img_outer {
+        height: 25rem;
+    }
+    .why_us_btns {
+        display: grid;
+        gap: 0.625rem 0.625rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .meets_why_btn {
+        padding: 1rem 0.625rem;
+        font-size: 1rem;
+    }
+    .py-8 {
+        padding: 3rem 0;
+    }
+    .main-faqs .wrapper {
+        padding: 0;
+    }
+    .race_facilities_wrap {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .meets_cards_content {
+        padding: 0;
+    }
+    .meets_bottom_row {
+        padding: 5px;
+    }
+    .race_cards_img_outer ,.meets_cards_img_outer{
+        height: 21.333rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    .footer-logo a {
+        width: 120px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.25rem;
+        padding-top: 1.5625rem;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-contact {
+        grid-column: 1 / -1;
+        padding-left: 0;
+    }
+
+    .racecourse_amenities ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner_content h1 {
+        font-size: 2.7rem;
+    }
+
+    .home_banner_btn {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    .section_heading {
+        font-size: 2.5rem;
+    }
+
+    .text_part {
+        padding: 2rem 0.5rem;
+    }
+
+    .home_plan_race_img_outer {
+        height: 20rem;
+    }
+
+    .home_plan_race_cards_text h5 {
+        font-size: 1.1rem;
+    }
+
+    .banner.sub_banner {
+        height: 30rem;
+    }
+    .meet_why_btm {
+        font-size: 1.2rem;
+    }
+
+    .meets_why_btn {
+        padding: 1rem;
+    }
+    .question {
+        font-size: 1.4rem;
+    }
+    .racecourse_img_outer {
+        height: 20rem;
+    }
+    .faqs .mb-5 {
+        margin-bottom: 0rem!important;
+    }
+    .faq_img_outer {
+        height: 20rem;
+    }
+    .race_facilities_wrap {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .banner_content h1 {
+        font-size: 2.3rem;
+    }
+
+    .banner_content p {
+        font-size: 1.1rem;
+    }
+
+    .banner_btns {
+        gap: 0.5rem;
+    }
+
+    .home_banner_btn {
+        padding: 1rem 0.5rem;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .banner {
+        height: 40.875rem;
+    }
+
+    .banner_wrap {
+        margin-top: 5rem;
+    }
+
+    .section_heading {
+        font-size: 2rem;
+    }
+
+    .py-7 {
+        padding: 3.375rem 0;
+    }
+
+    .fancy_heading_footer_outer {
+        max-width: 20.5rem;
+    }
+
+    .intro_txt p {
+        font-size: 1.1rem;
+    }
+
+    .intro_em_txt {
+        font-size: 1.3rem;
+    }
+
+    .race_ready_btns_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .banner.sub_banner {
+        height: 30rem;
+    }
+    .meet_why_btm {
+        font-size: 1.1rem;
+    }
+    .meets_why_btn {
+        font-size: 1rem;
+    }
+    .py-8 {
+        padding: 2rem 0;
+    }
+    .question {
+        padding: 1rem 2rem 1rem  1rem;
+    }
+    .get-started-form form {
+        grid-template-columns: 1fr;
+    }
+    .faq_img_outer {
+        height: 17rem;
+    }
+    .main-faqs .wrapper {
+        padding: 1rem 0 0 0;
+    }
+    .still-have p {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .racecourse_amenities ul {
+        grid-template-columns: 1fr;
+    }
+
+    .banner_content h1 {
+        font-size: 1.7rem;
+    }
+
+    .banner_btns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home_banner_btn {
+        font-size: 1.1rem;
+    }
+
+    .brand-container a,
+    .footer-logo a {
+        width: 12.75rem;
+    }
+
+    .section_heading {
+        font-size: 1.7rem;
+    }
+
+    .featured_card_btns_wrap {
+        flex-direction: column;
+    }
+
+    .featured_card_content h3 {
+        font-size: 1.5em;
+        line-height: 1.4;
+    }
+
+    .img_part {
+        height: 16rem;
+    }
+
+    .text_part p {
+        font-size: 1.1rem;
+    }
+
+    .home_plan_race_img_outer {
+        height: 17rem;
+    }
+
+    .butn {
+        line-height: 1.4;
+    }
+
+    .home_explore_btn {
+        font-size: 1.1rem;
+        padding: 1rem 0.625rem;
+    }
+
+    .newsletter-wrap p {
+        font-size: 1.1rem;
+    }
+
+    .banner.sub_banner {
+        height: 25rem;
+    }
+
+    .racecourse_cards_content h3 {
+        font-size: 1.7rem;
+    }
+
+    .race_ready_btns_box {
+        grid-template-columns: 1fr;
+    }
+
+    .banner.sub_banner .banner_content h1 {
+        font-size: 2.2rem;
+    }
+    .why_us_btns {
+        grid-template-columns: 1fr;
+    }
+    .meet_why_us_icon {
+        height: 4rem;
+        width: 4rem;
+    }
+    .destination-card-text h3 {
+        font-size: 1.3rem;
+    }
+    .destination-para h6 {
+        font-size: 1.2rem;
+    }
+    .question {
+        font-size: 1.2rem;
+    }
+    .answer {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.5rem;
+    }
+}

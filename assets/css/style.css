@@ -1,0 +1,1521 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Global CSS Start */
+html {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    word-break: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    line-height: 1.2;
+    margin-bottom: 3px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+button,
+textarea,
+input {
+    font-family: "Roboto", sans-serif;
+}
+
+input {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 0.9375rem;
+}
+
+.py-7 {
+    padding: 4.375rem 0;
+}
+
+.pt-7 {
+    padding-top: 4.375rem;
+}
+
+.pb-7 {
+    padding-bottom: 4.375rem;
+}
+
+.py-8 {
+    padding: 5rem 0;
+}
+
+.pt-8 {
+    padding-top: 5rem;
+}
+
+.pb-8 {
+    padding-bottom: 5rem;
+}
+
+.py-10 {
+    padding: 6.25rem 0;
+}
+
+.pb-10 {
+    padding-bottom: 6.25rem;
+}
+
+.pt-10 {
+    padding-top: 6.25rem;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.m-0-auto {
+    margin: 0 auto
+}
+
+.bg_center_cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_center_contain {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg_left_contain {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg_left_cover {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.w_100 {
+    width: 100%;
+}
+
+.h_100 {
+    height: 100%;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.bg-0-0 {
+    background-position: 0% 0%;
+}
+
+/* Global CSS End */
+
+/* Website Scrollbar CSS  */
+::-webkit-scrollbar {
+    width: 0.9375rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #ebbe00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #231C07;
+    border-radius: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #231C07;
+}
+
+/* Website Scrollbar CSS  */
+
+/* Section Heading CSS Start */
+.section_heading {
+    color: #231C07;
+    font-size: 3rem;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    line-height: 1.3;
+}
+
+span.theme {
+    color: #ebbe00;
+}
+
+
+.bg_dark {
+    background-color: #432818;
+}
+
+.bg_light {
+    background-color: #faf8f3;
+}
+
+.text_white {
+    color: #fff;
+}
+
+.text_theme {
+    color: #ebbe00;
+}
+
+.text_dark {
+    color: #222222;
+}
+
+.aoshide {
+    overflow: hidden;
+}
+
+.fancy_heading_footer_outer {
+    width: 100%;
+    max-width: 62.5rem;
+    height: 2.5rem;
+    margin-top: 0.9375rem;
+}
+
+.fancy_heading_footer {
+    height: 100%;
+    width: 100%;
+}
+
+/* Section Heading CSS End */
+
+/* Button CSS Start */
+
+.butn {
+    padding: 0.625rem 1.5625rem;
+    font-weight: 400;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #ebbe00;
+    z-index: 1;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.1rem;
+    overflow: hidden;
+    letter-spacing: 1px;
+    border-radius: 1.875rem;
+}
+
+.butn::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: -1;
+    background: #ebbe00;
+    transition: all 0.3s ease;
+}
+
+.butn:hover {
+    color: #000;
+}
+
+.butn:hover:after {
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+/* Button CSS End*/
+
+
+
+/* Header CSS Start */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    box-shadow: #231C07 0px 3px 8px;
+    padding-right: 1.5rem;
+    background-color: rgb(64 64 64 / 90%);
+    background-blend-mode: multiply;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.9375rem 0;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand-container {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-flex;
+    padding: 0.9375rem 0px;
+    width: 30%;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.brand-container a,
+.footer-logo a {
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4.75rem;
+    width: 12.75rem;
+}
+
+.sticky-header.fixed_header .brand-container a {
+    background-image: url(../images/logo.svg)
+}
+
+.menu-toggle-btn {
+    display: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: right;
+    cursor: pointer;
+    margin: auto 0;
+    z-index: 60;
+    background-image: url("../images/menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation-menu {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.navigation-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-menu ul li a {
+    padding: 0.625rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+    position: relative;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navigation-menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ebbe00;
+    transform-origin: center;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-menu ul li a.active {
+    color: #ebbe00;
+}
+
+
+.navigation-menu ul li a.active::after {
+    transform: scaleX(0.9);
+    background-color: #ebbe00;
+    transform-origin: center;
+}
+
+.navigation-menu ul li a:hover {
+    color: #ebbe00;
+}
+
+.navigation-menu ul li a:hover::after {
+    transform: scaleX(0.9);
+    background-color: #ebbe00;
+}
+
+.menu-close-btn {
+    display: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/close.png);
+}
+
+/* Header CSS End */
+
+/* Banner CSS Start */
+.banner {
+    height: 34.375rem;
+    background-color: rgba(0 0 0/40%);
+    background-blend-mode: multiply;
+}
+
+.banner_wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.banner_img {
+    width: 50%;
+}
+
+.banner_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3.125rem;
+    background-color: #231C07;
+}
+
+.banner_content h1 {
+    color: #fff;
+    line-height: 1.4;
+    font-size: 2.8125rem;
+    margin-bottom: 1.25rem;
+}
+
+.banner_content p {
+    color: #fff;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    max-width: 46.875rem;
+    line-height: 1.6;
+}
+
+.banner_btns_grp {
+    display: inline-flex;
+    gap: 0.625rem;
+}
+
+/* Banner CSS End */
+
+/* BG Image CSS Start */
+.bg_sec {
+    background-image: url(../images/section_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* BG Image CSS End */
+
+/* Underine Effect CSS Start */
+.underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 16px;
+    background-image: linear-gradient(to right, #432818 0%, #432818 100%);
+    background-repeat: no-repeat;
+    background-size: 15rem 2px;
+    background-position: left bottom;
+}
+
+.underline::before,
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #432818;
+    transform: rotate(45deg);
+    bottom: -3px;
+}
+
+.underline::before {
+    left: 0;
+}
+
+.underline::after {
+    left: 15rem;
+}
+
+.underline.underline_white {
+    background-image: linear-gradient(to right, #fff, #fff 100%);
+}
+
+.underline.underline_white::before,
+.underline.underline_white::after {
+    background: #fff;
+}
+
+.underline.underline_theme {
+    background-image: linear-gradient(to right, #ebbe00, #ebbe00 100%);
+}
+
+.underline.underline_theme::before,
+.underline.underline_theme::after {
+    background: #ebbe00;
+}
+
+/* Underine Effect CSS End */
+
+
+/* Home Plan CSS Start */
+.home_plan_cards {
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.home_plan_cards:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-3px);
+}
+
+.home_plan_cards_img_outer {
+    height: 21.875rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.common_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255/30%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+
+.home_plan_cards_img_outer:hover .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.home_plan_cards_img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_plan_cards_content {
+    padding: 1.25rem 0.625rem;
+}
+
+.home_plan_cards_content p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.home_plan_cards_content h3 {
+    font-size: 1.7rem;
+    color: #231C07;
+}
+
+/* Home Plan CSS End*/
+
+
+/* Home Next Race CSS Start */
+.home_nxt_event_wrap .row {
+    background-color: #231C07;
+    border-top: 5px solid #ebbe00;
+    border-bottom: 5px solid #ebbe00;
+}
+
+.home_nxt_event_wrap .col-lg-5 {
+    padding: 0;
+}
+
+.img_part_outer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_part_outer:hover .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.img_part {
+    height: 100%;
+    width: 100%;
+}
+
+.text_part {
+    padding: 5rem 1.875rem;
+}
+
+.text_part h3 {
+    color: #ebbe00;
+    line-height: 1.3;
+}
+
+.text_part p {
+    font-size: 1.1rem;
+}
+
+.text_svg {
+    fill: #ebbe00;
+    height: 13px;
+    width: 12px;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+/* Home Next Race CSS End*/
+
+
+/* Home Blog Cards CSS Start */
+.blog_card {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    height: 100%;
+    transition: 0.3s all ease-in-out;
+    display: block;
+    background-color: #231C07;
+}
+
+.blog_card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.blog_card_img-outer {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.blog_card_img-outer .common_overlay {
+background-color: rgb(61 36 21/50%);
+}
+.blog_card_img-outer:hover .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.blog_card_img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0 0 0/10%);
+    background-blend-mode: multiply;
+}
+
+.blogs_cards_butn {
+    opacity: 0;
+    transition:
+        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30px);
+    pointer-events: none;
+}
+
+.blog_card:hover .blogs_cards_butn {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+}
+
+.blog_card_content {
+    padding: 1rem;
+}
+
+.blog_card_content h5 {
+    color: #ebbe00;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.home_blog_btn {
+    color: #231C07;
+    border-color: #231C07;
+}
+
+.home_blog_btn:hover,
+.blogs_cards_butn:hover {
+    border-color: #ebbe00;
+}
+
+.blogs_cards_butn {
+    color: #ebbe00;
+    width: max-content;
+    border-color: #ebbe00;
+}
+
+/* Home Blog Cards CSS End*/
+
+
+/* Newsletter CSS Start */
+
+.newsletter_input_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #231C07;
+    max-width: 37.5rem;
+    margin: 3.125rem auto 1.25rem auto;
+}
+
+span.input_msg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    margin-right: 10px;
+    display: inline-block;
+    min-width: 1.5625rem;
+}
+
+.newsletter_input_box input {
+    max-width: 40.625rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0.625rem;
+    color: #231C07;
+    font-size: 1.5rem;
+}
+
+.newsletter_input_box input::placeholder {
+    color: #55473f;
+}
+
+.newslettr_wrap h4 {
+    color: #231C07;
+    font-size: 1.3rem;
+}
+.newsletter-btn {
+    color: #231C07;
+    border-color: #231C07;
+}
+.newsletter-btn:hover {
+    border-color: #ebbe00;
+}
+/* Newsletter CSS Start */
+
+/* Home Footer Slider CSS Start */
+.swiper-container {
+    height: 230px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-container-free-mode>.swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.swiper-slide {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-slide .common_overlay{
+    background-color: rgb(61 36 21/40%);
+  }
+  .swiper-slide:hover .common_overlay{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .swiper_slide_img{
+    height: 100%;
+    width: 100%;
+  }
+/* Home Footer Slider CSS  End */
+
+/* Footer CSS Start */
+.site_footer {
+    box-shadow: #ebbe00 0px 5px 10px 5px;
+    background-image: url(../images/footer_bg.jpg);
+    background-color: rgba(0 0 0/80%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.footer_logo a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 6rem;
+    width: 14rem;
+    background-image: url(../images/logo_footer.png);
+}
+.footr_blcks h3 {
+    color: #ebbe00;
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.25rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.disclaimer p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.links_footr ul li a {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    transition: 0.3s all ease-in-out;
+}
+
+.links_footr ul li a:hover {
+    color: #ebbe00;
+    transform: translateX(3px);
+}
+
+.footer_email {
+    color: #fff;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 0.9375rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    margin-right: 5px;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebbe00;
+    border-radius: 5px;
+    transition: 0.2s all ease-in-out;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+}
+.social-links a svg {
+    fill: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom_strip {
+    border-top: 1px solid #ebbe00;
+}
+
+.copy_txt p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.ssl_certi {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0.625rem 0;
+}
+
+.ssl_certi_inner {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3.75rem;
+    width: 12.5rem;
+    background-image: url(../images/ssl.png);
+}
+/* Footer CSS End*/
+ 
+
+/* Meets Page CSS Start */
+.sub_pages_banner {
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(0 0 0/60%);
+    background-blend-mode: multiply;
+}
+.banner_box {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+.banner_box h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    max-width: 42.375rem;
+    color: #ebbe00;
+}
+
+.meets_cards {
+    background: #fff;
+    padding: 1.25rem;
+    border-radius: 1.875rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100%;
+}
+.meets_cards_content {
+    padding: 3rem 0;
+}
+.meets_loc svg,.meets_race svg ,.meets_race_type svg,.meets_time svg{ 
+    height: 1.25rem;
+    width: 1.25rem;
+    display: inline-block;
+    margin-right: 10px;
+    fill: #231C07;
+}
+.meets_loc ,.meets_race ,.meets_race_type{
+    font-size: 1.1rem;
+    color: #231C07;
+}
+.overview_head {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#231C07;
+}
+.meets_overview{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #231C07;
+}
+.meets_cards_img_outer {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.meets_cards_img_outer:hover  .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.meets_cards_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.875rem;
+}
+.meets_bottom_row {
+    padding: 15px;
+}
+.upcoming_meets_wrap {
+    background-color: #231C07;
+    padding: 1.25rem;
+    border-radius: 1.875rem;
+}
+.meets_cards_content h2 {
+    font-size: 1.8rem;
+    color: #231C07;
+}
+.upcoming_meets_wrap  .facilities_head {
+    color: #ebbe00;
+    font-size: 1.4rem;
+}
+.upcoming_meets_wrap  .facilities {
+    color: #fff;
+    font-size: 1rem;
+}
+.upcoming_meets_wrap .facilities_extra {
+    font-size: 1.1rem;
+    color: #fff;
+}
+/* Meets Page CSS End*/
+
+/* Racecourse CSS Start */
+.race_cards {
+    background: #231C07;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+}
+.race_cards_img_outer {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.race_cards_img_outer:hover .common_overlay{
+    transform: translate(-50%, -50%) scale(1);  
+}
+.race_cards_img.bg_center_cover {
+    height: 100%;
+    width: 100%;
+}
+.race_loc,.race_type ,.race_track{
+    color:#fff;
+    font-size: 1rem;
+}
+.race_loc svg,.race_type svg,.race_track svg{
+    height: 1.25rem;
+    width: 1.25rem;
+    display: inline-block;
+    margin-right: 10px;
+    fill: #fff;
+}
+.race_head {
+    color: #ebbe00;
+    font-size: 1.3rem;
+}
+.race_overview {
+    color: #fff;
+    font-size: 1rem;
+}
+.race_facilities_wrap p{
+    font-size: 1rem;
+    transition: 0.2s all ease-in-out;
+    color: #231C07;
+    font-weight: 500;
+}
+.race_facilities_wrap p:hover{
+transform: translateX(-3px);
+}
+.race_facilities_wrap p  svg {
+    height: 1rem;
+    width: 1rem;
+    fill: #231C07;
+    margin-right: 0.3125rem;
+    transition: 0.2s all ease-in-out;
+}
+.race_facilities_wrap {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.25rem 0;
+}
+.race_bottom_row {
+    background-color: #fff;
+    border-radius: 1.25rem;
+    margin-inline: 0px;
+}
+.race_facilities_head {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #231C07;
+}
+/* Racecourse CSS End */
+
+
+/* Guides CSS Start */
+.main-destination-content {
+    display: block;
+    background: #fff;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    height: 100%;
+}
+.destination-card-text {
+    padding: 1.25rem;
+}
+
+.destination-card-text h3 {
+    font-size: 1.2rem;
+    color: #bb9457;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: capitalize;
+}
+
+.guide_card_image_outer {
+    width: 100%;
+    height: 18.75rem;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.guide_card_image_outer:hover .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+.guide_card_image {
+    width: 100%;
+    height: 100%;
+}
+
+.guides_cards_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination-para ul li {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.destination-para ul li::marker {
+    color: #231C07;
+}
+
+.section.blog_description_sec {
+	margin-top: 80px;
+}
+
+.guide_desc_img_outer {
+	height: 31.25rem;
+	width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.guide_desc_img{
+    height: 100%;
+    width: 100%;
+}
+.blog_desc {
+    padding: 1.2rem;
+    border-radius: 20px;
+    box-shadow: #231C07 0px 3px 8px;
+}
+.blog_desc h2 {
+    color:#231C07;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.blog_desc p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #454545;
+}
+/* Guides CSS End */
+
+
+/* FAQS  CSS Start*/
+
+.faq_img_outer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq_img_outer:hover .featured_card_overlay {
+    right: 0;
+}
+
+
+.faq_img {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: start;
+gap: 1.25rem;
+}
+
+.faqs.second {
+    background: #101c44;
+}
+
+
+
+.faqs-container {
+    background-color: white;
+    color: #222222;
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+
+.question {
+    font-size: 1.6rem;
+    padding: 1.25rem 5rem 1.25rem 1.25rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #231C07, #c19c01, #231C07);
+    overflow: hidden;
+    color: #fff;
+}
+
+.question::after {
+    content: "\002B";
+    font-size: 2.2rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+}
+
+.question.active::after {
+    transform: rotate(45deg);
+}
+
+.answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.answer {
+    padding: 1.25rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.answer p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.main-faqs .wrapper {
+    padding: 2rem 0;
+}
+.answer ul li {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+}
+.faq_btm {
+    font-size: 1.2rem;
+    color: #454545;
+    font-weight: 500;
+}
+.faq_btm a{
+    color: #ebbe00;
+}
+/* FAQS  CSS End*/
+
+/* Contact CSS Start */
+.contact_content_wrap p a {
+    color: #ebbe00;
+}
+.contact_content_wrap p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.contact_text_grps .social-icons {
+    max-width: 13.625rem;
+}
+
+.contact_text_grps {
+    background: #432818;
+    padding: 1.25rem;
+    height: 100%;
+}
+
+.contact_text_grps h3 {
+    color: #bb9457;
+    font-size: 1.5rem;
+}
+
+.contact_text_grps p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.contact_text_grps p a {
+    color: #bb9457;
+}
+
+.contact_text_grps p a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.get-started-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 600px;
+}
+
+.get-started-form form .form-group:last-of-type {
+    grid-column: 1/-1;
+}
+
+.get-started-form form .primary-btn {
+    justify-self: start;
+}
+
+.get-started-form h2 {
+    font-size: 1.875rem;
+    margin: 0 0 15px;
+    color: #bb9457;
+}
+
+.get-started-form p {
+    margin: 0 0 40px;
+}
+
+.get-started-form form input,
+.get-started-form form textarea {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    padding: 15px;
+    color: #222222;
+}
+
+.contact_form_btn {
+    width: max-content;
+}
+
+.get-started-image {
+    height: 100%;
+}
+
+.get-started-form p {
+    font-size: 1.1rem;
+    color: #595656;
+    font-weight: 500;
+}
+
+ .contact_text_grps .social-icons li a {
+    border: 1px solid #bb9457;
+} 
+.contact_text_grps .social-icons li a svg {
+    fill: #bb9457;
+}
+
+.contact_form_btn {
+    color:#231C07;
+    border-color: #231C07;
+}
+.contact_form_btn:hover {
+    color:#231C07;
+    border-color: #ebbe00;
+}
+.get-started-form .contact_form_txt {
+    color: #000;
+}
+.contact_content_wrap ul li {
+    margin-left: 1.25rem;
+    list-style-type: disc;
+}
+/* Contact CSS End */
+
+
+/* Footer Pages CSS Start*/
+.footer_pages_banner {
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+.footer-pages-wrap {
+    max-width: 81.25rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 99;
+}
+
+.footer-pages-content-grp {
+    margin-bottom: 1.2rem;
+    border-radius: 0.625rem;
+}
+
+.footer-pages-content-grp:last-child {
+    margin-bottom: 0px;
+}
+
+.footer-pages-content-grp h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.9375rem;
+    color: #231C07;
+    line-height: 1.4;
+}
+
+.footer-pages-content-grp strong {
+    font-size: 1.125rem;
+}
+
+.footer-pages-content-grp p {
+    font-size: 1.0625rem;
+    margin-bottom: 0.5rem;
+    color: #4c4c4c;
+    font-weight: 500;
+}
+
+.footer-pages-content-grp ul {
+    list-style: none;
+    padding-left: 1.25rem;
+}
+
+.footer-pages-content-grp ul li {
+    list-style-type: disc;
+}
+
+.footer-pages-content-grp ul li::marker {
+    color: #191919;
+}
+
+.footer-pages-content-grp p a {
+    color:#ebbe00;
+    display: inline-block;
+    transition: 0.4s all ease-in-out;
+    text-underline-offset: 4px;
+    font-weight: 600;
+}
+
+.footer-pages-content-grp p a:hover {
+    text-decoration: underline;
+}
+.footer-pages-content-grp.ft_diff {
+    background: #191919;
+    width: max-content;
+    padding: 1.25rem;
+}
+.footer-pages-content-grp.ft_diff p{
+    color: #fff;
+}
+/* Footer Pages CSS End*/
