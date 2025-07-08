@@ -141,6 +141,10 @@
         height: 20rem;
         margin-bottom: 1.875rem;
     }
+    .py-5 {
+        padding-top: 2rem!important;
+        padding-bottom: 2rem!important;
+    }
 }
 
 @media (max-width: 767px) {
