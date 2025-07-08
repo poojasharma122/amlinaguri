@@ -7,6 +7,9 @@
     .banner_content h1 {
         font-size: 2.1rem;
     }
+    .question {
+        font-size: 1.3rem;
+    }
 }
 
 
@@ -20,6 +23,9 @@
     .banner_btns {
         padding: 0.625rem 1rem;
         font-size: 1rem;
+    }
+    .question {
+        font-size: 1.1rem;
     }
 
 }
@@ -118,6 +124,19 @@
     .race_cards_content {
         padding: 1.5rem 0;
     }
+    .question {
+        padding: 1.25rem 3rem 1.25rem 1.25rem;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+    .py-8 {
+        padding: 2rem 0;
+    }
+    .faq_btm {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 767px) {
@@ -152,6 +171,12 @@
     }
     .py-8 {
         padding: 3rem 0;
+    }
+    .faq_btm {
+        font-size: 1rem;
+    }
+    .blog_card_content h5 {
+        font-size: 1.1rem;
     }
 
 }
@@ -195,6 +220,9 @@
 
     .blog_card_img-outer {
         height: 20rem;
+    }
+    .question::after {
+        font-size: 2rem;
     }
 
 }
@@ -255,5 +283,8 @@
     }
     .py-8 {
         padding: 2rem 0;
+    }
+    .answer p {
+        font-size: 1rem;
     }
 }
