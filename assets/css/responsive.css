@@ -234,7 +234,13 @@
     .contact_content_wrap h3 {
         line-height: 1.4;
     }
-}
+    .banner_box.extra h1 {
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.5rem;
+    }}
 
 @media screen and (max-width:480px) {
     .racecourse_amenities ul {
