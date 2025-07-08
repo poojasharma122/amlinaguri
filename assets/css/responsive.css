@@ -10,6 +10,9 @@
     .question {
         font-size: 1.3rem;
     }
+    .py-7 {
+        padding: 3.375rem 0;
+    }
 }
 
 
@@ -28,6 +31,7 @@
         font-size: 1.1rem;
         font-weight: 500;
     }
+
 
 }
 
