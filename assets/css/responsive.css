@@ -112,6 +112,10 @@
     .text_part {
         padding: 2rem 1rem;
     }
+    .meets_cards_content h2 {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
 }
 
 @media (max-width: 767px) {
@@ -133,6 +137,16 @@
     }
     .copy_txt p {
         text-align: center;
+    }
+    .sub_pages_banner {
+        height: 25rem;
+    }
+    .meets_cards_content h2 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .blog_card_img-outer {
+        height: 23rem;
     }
 
 }
@@ -167,6 +181,16 @@
     .newsletter_input_box input {
         font-size: 1.2rem;
     }
+    .sub_pages_banner {
+        height: 20rem;
+    }
+    .meets_cards {
+        padding: 1rem;
+    }
+
+    .blog_card_img-outer {
+        height: 20rem;
+    }
 
 }
 
@@ -200,4 +224,14 @@
     .blog_card_content h5 {
         font-size: 1.1rem;
     }
+    .banner_box h1 {
+        font-size: 2rem;
+    }
+    .text_part p {
+        font-size: 1rem;
+    }
+    .blog_card_img-outer {
+        height: 18rem;
+    }
+
 }
