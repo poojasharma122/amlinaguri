@@ -529,12 +529,12 @@ span.theme {
     padding-bottom: 16px;
     background-image: linear-gradient(to right, #432818 0%, #432818 100%);
     background-repeat: no-repeat;
-    background-size: 15rem 2px;
+    background-size: 100% 2px; /* 🔧 Stretch underline to full width */
     background-position: left bottom;
-}
-
-.underline::before,
-.underline::after {
+  }
+  
+  .underline::before,
+  .underline::after {
     content: '';
     position: absolute;
     width: 8px;
@@ -542,33 +542,32 @@ span.theme {
     background: #432818;
     transform: rotate(45deg);
     bottom: -3px;
-}
-
-.underline::before {
+  }
+  
+  .underline::before {
     left: 0;
-}
-
-.underline::after {
-    left: 15rem;
-}
-
-.underline.underline_white {
+  }
+  
+  .underline::after {
+    right: 0;
+  }
+  
+  .underline.underline_white {
     background-image: linear-gradient(to right, #fff, #fff 100%);
-}
-
-.underline.underline_white::before,
-.underline.underline_white::after {
+  }
+  .underline.underline_white::before,
+  .underline.underline_white::after {
     background: #fff;
-}
-
-.underline.underline_theme {
-    background-image: linear-gradient(to right, #ebbe00, #ebbe00 100%);
-}
-
-.underline.underline_theme::before,
-.underline.underline_theme::after {
+  }
+  
+  .underline.underline_theme {
+    background-image: linear-gradient(to right, #ebbe00 100%, #ebbe00 100%);
+  }
+  .underline.underline_theme::before,
+  .underline.underline_theme::after {
     background: #ebbe00;
-}
+  }
+  
 
 /* Underine Effect CSS End */
 
