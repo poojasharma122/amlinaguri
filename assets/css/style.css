@@ -1315,9 +1315,6 @@ gap: 1.25rem;
     font-weight: 400;
 }
 
-.main-faqs .wrapper {
-    padding: 2rem 0;
-}
 .answer ul li {
     list-style-type: disc;
     margin-left: 1.25rem;
