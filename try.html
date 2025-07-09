@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        article {
+            display: flex;
+            width: 200%;
+            animation: bannermove 20s linear infinite;
+        }
+
+        article.paused {
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li {
+            flex: 0 0 14.28%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 1200px) {
+            li {
+                flex: 0 0 20%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            li {
+                flex: 0 0 25%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            li {
+                flex: 0 0 33.33%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            li {
+                flex: 0 0 50%;
+            }
+        }
+
+
+
+        @keyframes bannermove {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="mt-5">
+        <article>
+            <div>
+                <ul>
+                    <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/111111/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/222222/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/333333/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/444444/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/555555/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/666666/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/777777/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/888888/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/999999/ffffff.png" /></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/111111/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/222222/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/333333/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/444444/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/555555/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/666666/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/777777/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/888888/ffffff.png" /></li>
+                    <li><img src="http://dummyimage.com/600x400/999999/ffffff.png" /></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <script src="assets/js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('section').hover(
+                function () {
+                    $('article').addClass('paused');
+                },
+                function () {
+                    $('article').removeClass('paused');
+                }
+            );
+        });
+    </script>
+</body>
+
+</html>
