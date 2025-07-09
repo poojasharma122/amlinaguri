@@ -13,6 +13,9 @@
     .py-7 {
         padding: 3.375rem 0;
     }
+    .footer_slider   .footer_slider_img_outer {
+        flex: 0 0 16.6667%;     
+    }
 }
 
 
@@ -39,6 +42,9 @@
 @media screen and (max-width: 1024px) {
     html {
         font-size: 15px;
+    }
+    .footer_slider   .footer_slider_img_outer {
+        flex: 0 0 20%;
     }
 
 }
@@ -194,6 +200,12 @@
     .guide_desc_img_outer {
         height: 21.25rem;
     }
+    .footer_slider  .footer_slider_img_outer {
+        flex: 0 0 25%;         
+    }
+    .footer_slider {
+        height: 180px;
+    }
 }
 
 
@@ -254,7 +266,14 @@
     }
     .footer-pages-content-grp h3 {
         font-size: 1.5rem;
-    }}
+    }
+    .footer_slider .footer_slider_img_outer {
+        flex: 0 0 33.3333%;         
+    }
+    .footer_slider {
+        height: 150px;
+    }
+}
 
 @media screen and (max-width:480px) {
     .racecourse_amenities ul {
@@ -324,6 +343,9 @@
     }
     .guide_desc_img_outer {
         height: 17.25rem;
+    }
+    .footer_slider  .footer_slider_img_outer {
+        flex: 0 0 50%;             
     }
 
 }

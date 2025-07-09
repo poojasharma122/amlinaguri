@@ -838,36 +838,64 @@ span.input_msg {
 /* Newsletter CSS Start */
 
 /* Home Footer Slider CSS Start */
-.swiper-container {
-    height: 230px;
+.footer_slider {
+    height: 200px;
     overflow: hidden;
+}
+
+.footer_slider article {
+    display: flex;
+    width: 200%;
+    animation: bannermove 25s linear infinite;
+    height: 100%;
+}
+
+.footer_slider article.paused {
+    animation-play-state: paused;
+}
+
+.footer_slider .image-row {
+    display: flex;
     width: 100%;
 }
 
-.swiper-container-free-mode>.swiper-wrapper {
-    transition-timing-function: linear;
-}
-
-.swiper-slide {
-    will-change: transform;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    background-position: center center;
-    background-size: cover;
+.footer_slider .footer_slider_img_outer {
+    flex: 0 0 14.28%;
+    height: 100%;
     overflow: hidden;
     position: relative;
-  }
-  .swiper-slide .common_overlay{
-    background-color: rgb(61 36 21/40%);
-  }
-  .swiper-slide:hover .common_overlay{
+}
+.footer_slider  .footer_slider_img_outer .footer_slider_img {
+    transition: filter 0.3s ease;
+    filter: grayscale(0%);
+}
+.footer_slider:hover .footer_slider_img {
+    filter: grayscale(100%);
+}
+.footer_slider .footer_slider_img_outer:hover .footer_slider_img {
+    filter: grayscale(0%);
+}
+.footer_slider  .footer_slider_img_outer .common_overlay {
+    background-color: rgba(35 28 7/50%);
+}
+
+.footer_slider  .footer_slider_img_outer:hover .common_overlay {
     transform: translate(-50%, -50%) scale(1);
-  }
-  .swiper_slide_img{
+}
+
+.footer_slider .footer_slider_img {
     height: 100%;
     width: 100%;
-    overflow: hidden;
-  }
+}
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
 /* Home Footer Slider CSS  End */
 
 /* Footer CSS Start */
@@ -1523,58 +1551,3 @@ gap: 1.25rem;
 
 
 
-@mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-}
-
-$animationSpeed: 40s;
-
-// Animation
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
-}
-
-
-// Styling
-.slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: 960px;
-	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
-
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
-}
